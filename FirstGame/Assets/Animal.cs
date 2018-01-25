@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Animal : MonoBehaviour /*class is a thing of code meaning 
 Im gonna do something. Class can not function on its own. {} is a box */
  {
-
+ public string Name;
+ public int Foodcount;
+ public Text myUIText;
 	// Use this for initialization
 	// This declares what start will do
 	void Start () //void means I'm gonna do something, () means its a function.
@@ -22,8 +25,13 @@ Im gonna do something. Class can not function on its own. {} is a box */
 	}
 	void OnMouseDown()
 	{
+		myUIText.text = "I have a " + Name + "It has this amount of food: " + Foodcount;
 		print("meow");	
+		print("I have a" + Name);
+		print("It has this amount of food: " + Foodcount);
 	}
+
+	
 	// Update is called once per frame
 	/*  A line of code is either data or work
 	 : Print (is work)("i Love my cat"(is data))
