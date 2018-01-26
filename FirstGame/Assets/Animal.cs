@@ -26,9 +26,6 @@ Im gonna do something. Class can not function on its own. {} is a box */
 	void OnMouseDown()
 	{
 		myUIText.text = "I have a " + Name + "It has this amount of food: " + Foodcount;
-		print("meow");	
-		print("I have a" + Name);
-		print("It has this amount of food: " + Foodcount);
 	}
 
 	
