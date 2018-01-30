@@ -8,12 +8,15 @@ using UnityEngine;
 public class SecondLevel : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	public bool key = false;
 		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+		void OnMouseDown()
+		{
+			if(key == true)
+			{ print("open door");
+			}
+			if(key == false)
+			{ print("Door is locked");
+			}
+		}
 }

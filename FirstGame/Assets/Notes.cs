@@ -31,4 +31,8 @@ of data, String, Int, and Float are a class*/
  as it uses more characters. I can see this being used in counters like racing games for a 
  speedomoter, or a points system. String is a word variable. Pieces of lingual data strung together.
  We used this with imputing a name on our objects and having it reference, print text for actions
- like on start or onmousedown. And thats about the extent of my understanding. */
+ like on start or onmousedown. And thats about the extent of my understanding.
+ 
+ If statements
+ if ("hello" == "hello"){ true runs code} if ("hello" != "hi") true run code
+ if ("hello" == "hi") false. Bool true or false statements. == means to compare*/

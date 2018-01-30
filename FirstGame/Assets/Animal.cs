@@ -25,18 +25,28 @@ Im gonna do something. Class can not function on its own. {} is a box */
 	}
 	void OnMouseDown()
 	{
-		myUIText.text = "I have a " + Name + "It has this amount of food: " + Foodcount;
+	
+	if(Name == "CatChan"){
+		print("Meow");}
+	if(Name != "InuChan") {
+		print("bark");
 	}
-
+	if(Foodcount > 0) {
+		print("my" + Name + " has food");
+	}
+	if(Foodcount < 0) {
+		print("My" + Name + " does not have food");
+	}
+	}
+	}
 	
-	// Update is called once per frame
-	/*  A line of code is either data or work
-	 : Print (is work)("i Love my cat"(is data))
-	 Start is a decloration (declaired by keyword void),
-	 identifier (something we can call on. ie animal, dog, etc)
-	 */
+// Update is called once per frame
+/*  A line of code is either data or work
+ : Print (is work)("i Love my cat"(is data))
+ Start is a decloration (declaired by keyword void),
+ identifier (something we can call on. ie animal, dog, etc)
+ */
 	
-}
 /*Comments for in class assignment 1-23-18
  I'm still a little lost but my understaning is that the syntax of this program is like a cross
  between a nesting doll and a box. The first box is just what you want and its either public see
