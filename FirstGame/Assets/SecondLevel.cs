@@ -17,6 +17,6 @@ public class SecondLevel : MonoBehaviour {
 			}
 			if(key == false)
 			{ print("Door is locked");
-			}
+			} //box collider,set to trigger
 		}
 }
