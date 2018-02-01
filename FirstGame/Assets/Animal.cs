@@ -13,8 +13,6 @@ Im gonna do something. Class can not function on its own. {} is a box */
 	// This declares what start will do
 	void Start () //void means I'm gonna do something, () means its a function.
 	{
-		print("my animal is eating.");
-		print("Now my animal is sleeping");
 		//print does not exsist with a capital P, it must be lower case.
 		//idicates notes, and indicates for the computer to ignore it.
 		// this () indicates a function, must have "" for a string of txt.
@@ -28,13 +26,13 @@ Im gonna do something. Class can not function on its own. {} is a box */
 	
 	if(Name == "CatChan"){
 		print("Meow");}
-	if(Name != "InuChan") {
+		else
+	 {
 		print("bark");
 	}
 	if(Foodcount > 0) {
 		print("my" + Name + " has food");
-	}
-	if(Foodcount < 0) {
+	} else {
 		print("My" + Name + " does not have food");
 	}
 	}

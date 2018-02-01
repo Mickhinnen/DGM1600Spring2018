@@ -35,4 +35,8 @@ of data, String, Int, and Float are a class*/
  
  If statements
  if ("hello" == "hello"){ true runs code} if ("hello" != "hi") true run code
- if ("hello" == "hi") false. Bool true or false statements. == means to compare*/
+ if ("hello" == "hi") false. Bool true or false statements. == means to compare
+ else clause
+ if(true statement){ run code} else {run code}* else is a place within if statments 
+ + add - sub * times / divide but = assign Value == check equality != check unequality
+ >=   >   <=  < */
