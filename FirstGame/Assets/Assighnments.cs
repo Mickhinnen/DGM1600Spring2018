@@ -39,4 +39,5 @@ the situation matches and so on. Either way I like If statements. */
  then add if(Password == "Gotta Catch Them All") { print("Open"); } else { print("No"); } Thoughwhats 
  neat to is that all this can be shortend into if(key ? "Door unlocked" : "Door is locked"); or such
  however as fun as if or else is its really only best to use it for one or the other situations as
- putting in multiple options this way can get really long.    */
+ putting in multiple options this way can get really long */
+}

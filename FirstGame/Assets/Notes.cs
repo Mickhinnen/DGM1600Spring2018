@@ -39,4 +39,8 @@ of data, String, Int, and Float are a class*/
  else clause
  if(true statement){ run code} else {run code}* else is a place within if statments 
  + add - sub * times / divide but = assign Value == check equality != check unequality
- >=   >   <=  < */
+ >=   >   <=  < 
+ 
+ Scriptable object
+ 
+ */
