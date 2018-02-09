@@ -42,8 +42,19 @@ the situation matches and so on. Either way I like If statements. */
  putting in multiple options this way can get really long 
  
  Logical Opperators
- logical opperators use symbols like &&, ||, <, >, and == to check for truth in a string. For example
- we've used if statments such as if ( Password == "OU812") { print("door opens"); } in use of keys 
- and passwords to check to see if it matches up. We've used >, <, and = for 
+ logical opperators use symbols like && (and), ||(or), <(less than), > (greater than), and ==(equal to)
+ to check for truth in a string. For example we've used if statments such as if ( Password == "OU812")
+ { print("door opens"); } in use of keys and passwords to check to see if it matches up. We've used
+  >, <, and = to get different reactions like "too much", "not enough", "equal" *door opens*, these 
+  are basically math operations but instead of the computer doing math functions it checks for truth
+  and runs a code if its found true, sometimes more than one if multiple opperations are true.
+
+ Math Opperations
+ the class of math operators is as stated for math in a code. simple addition +, subtraction -, 
+ multiplication *, and even division / though that one will turn into a float. with these you can
+ make a counter that adds on like powerups, health, bullets, sheild repair, heck even a love counter.
+ It all depends on the game you want to make. Its done with a formula of C += A + B. A being player
+ health, ammo, etc. B being the powerup and C being the combined amount of powerup and player level.
+ This is a click points game in a nutshell.
  */
 }
