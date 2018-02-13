@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: New Power Up
   m_EditorClassIdentifier: 
   PowerLevel: 100
-  Name: Health
+  CurrentPlayer: {fileID: 0}

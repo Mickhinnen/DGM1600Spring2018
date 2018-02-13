@@ -43,4 +43,13 @@ of data, String, Int, and Float are a class*/
  
  Scriptable object
  
+
+ Array
+ all the same type with slats and two posts. Strinf[]players Jen0, Jim1, Jan2. Jerry3
+ (these are the slats, 6 things 0-5) [] makes it an array
+ loops
+ loops tell us everything about an array 
+ foreach (var player in Players)
+		{
+			print(player); a loop printing all the names of players in the array
  */
