@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09465a918e288c741afe05bace19c08f, type: 3}
   m_Name: Player1
   m_EditorClassIdentifier: 
-  PlayerName: 
+  PlayerName: NiN
   Score: 3000
   MPs: 20

@@ -51,5 +51,12 @@ of data, String, Int, and Float are a class*/
  loops tell us everything about an array 
  foreach (var player in Players)
 		{
-			print(player); a loop printing all the names of players in the array
+			print(player); a loop printing all the names of players in the array}
+
+
+Lists
+lists are like arrays, lists use collections.generic
+add in game and in code, in game temp. PlayerNameList.add("Dash")
+PlayerNameList.remove("Hellan") Again temporay file change. For permanent use scritableobject
+ScriptableObject + list = player changing content
  */

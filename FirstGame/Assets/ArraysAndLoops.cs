@@ -10,6 +10,7 @@ public class ArraysAndLoops : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+			print("Player Scores");
 		foreach (var player in Players)
 		{
 			print(player.PlayerName);//give us the name of each of the players
