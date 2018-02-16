@@ -71,5 +71,19 @@ the situation matches and so on. Either way I like If statements. */
  in the array we created in class this was done with the code foreach (var player in PLayers) { print
  (player.PlayerName); } this was a single instance loop that desplayed all the names of the players from 
  the player code through referencing said code. using the .PlayerName part.
+
+ Lists
+ Lists are like arrays in that they group together same types of data. the difference is first that lists
+ use <> instead of [], and the more helpfull one is that with a list other people other than the coder can 
+ change information in the game, people such as the player. The list is made as such, first you must have 
+ a  system.Collections.Generic; in the beging of the code to use lists. then List<Name> name = new List<Name>();
+ now you can do a lot more withs lists than arrays such as adding to or removing from the lists. counting etc
+ In class we made a list of the incredibles family. public List<string> FamilyList; and made a scriptableObject
+ with that we can add to that list using TheIncredibles.FamilyList.Add("famiilymember") ofcourse ours was 
+ TheIncredibles.FamilyList.Add("Dash"); Then we can also remove people to like PlayerNames.Remove("player5"); thing is
+ these types of changes to the list are only temperary. With the help of a scriptableobject we can make these changes
+ permenant. Using system UnityEngine.UI we can make a text input box that we can type into during game play that
+ will permenantly add players. This can have restrictions placed on it to prevent repeats, limit amount of players 
+ and retrict player names.
  */
 }
