@@ -66,5 +66,10 @@ the situation matches and so on. Either way I like If statements. */
   and health. public player[] Players; public int[] health; public int[] Mps; public powerups[] Powerups;
   public playernames[] Playernames
 
+ Foreach Loops
+ loops are used to show what is in an array, we used a loop to show the PLayernames, Highscore, and MPS
+ in the array we created in class this was done with the code foreach (var player in PLayers) { print
+ (player.PlayerName); } this was a single instance loop that desplayed all the names of the players from 
+ the player code through referencing said code. using the .PlayerName part.
  */
 }

@@ -55,7 +55,8 @@ of data, String, Int, and Float are a class*/
  foreach (var player in Players)
 		{
 			print(player); a loop printing all the names of players in the array}
-
+	for loops
+	for (int i = 0; i < numEnemies; i++)
 
 Lists
 lists are like arrays, lists use collections.generic
