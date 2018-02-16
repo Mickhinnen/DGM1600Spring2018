@@ -56,5 +56,15 @@ the situation matches and so on. Either way I like If statements. */
  It all depends on the game you want to make. Its done with a formula of C += A + B. A being player
  health, ammo, etc. B being the powerup and C being the combined amount of powerup and player level.
  This is a click points game in a nutshell.
+
+ Arrays 
+ arrays are like files with groups of the same things in it such as playersnames, highscores, points, 
+ health, etc. And they work like this Sting[] Players while being indicated with the brackets [], basically
+  the posts or bookends of the file or groups. This can be used with int as well ex int[] Highscore. This 
+  would collect the data of the highscores from the players. The benefit to having arrays is not having
+  to go through and write a code for each individual player in the game stating things like name, power,
+  and health. public player[] Players; public int[] health; public int[] Mps; public powerups[] Powerups;
+  public playernames[] Playernames
+
  */
 }

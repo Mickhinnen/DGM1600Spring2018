@@ -46,7 +46,10 @@ of data, String, Int, and Float are a class*/
 
  Array
  all the same type with slats and two posts. Strinf[]players Jen0, Jim1, Jan2. Jerry3
- (these are the slats, 6 things 0-5) [] makes it an array
+ (these are the slats, 6 things 0-5) [] makes it an array. type[] nameOfArray = new type [number of elements];
+ note that by type meaning int, string etc and second type is same as first type it int[] Health = new int[5];
+ 
+ 
  loops
  loops tell us everything about an array 
  foreach (var player in Players)
