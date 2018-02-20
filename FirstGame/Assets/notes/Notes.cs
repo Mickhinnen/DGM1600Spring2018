@@ -63,4 +63,11 @@ lists are like arrays, lists use collections.generic
 add in game and in code, in game temp. PlayerNameList.add("Dash")
 PlayerNameList.remove("Hellan") Again temporay file change. For permanent use scritableobject
 ScriptableObject + list = player changing content
+
+Switch statements
+if is good for true and false, yes and no. Switch is better for multiple options
+statement: switch(); however inside is different. switch (string); case "Password": //do work
+case all sorts of stuff as long as same type. can be anykind of data. case strings, enum?, scriptable object.
+
+
  */

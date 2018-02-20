@@ -5,7 +5,7 @@ using UnityEngine;
 public class ArraysAndLoops : MonoBehaviour {
 
 	
-	public int[] Highscores;
+	/*public int[] Highscores;
 	public Player[] Players;
 	
 	// Use this for initialization
@@ -25,5 +25,5 @@ public class ArraysAndLoops : MonoBehaviour {
 			}
 		}
 	}
-	
+*/
 }

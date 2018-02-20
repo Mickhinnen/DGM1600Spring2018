@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ClickPowerUp : MonoBehaviour {
-	public PowerUp MyPowerUp;
+	public PowerUpBase MyPowerUp;
 	private void OnMouseDown()
 	{
 		//do work
-		MyPowerUp.RunPowerUp();
+		//MyPowerUp.RunPowerUp();
 	}
 }
