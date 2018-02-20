@@ -85,5 +85,32 @@ the situation matches and so on. Either way I like If statements. */
  permenant. Using system UnityEngine.UI we can make a text input box that we can type into during game play that
  will permenantly add players. This can have restrictions placed on it to prevent repeats, limit amount of players 
  and retrict player names.
+ 
+ Switches
+ switches are an alternative to if statements and are better for when there is more than two ansers. Where if statements
+ are used for true or false and can of more than two with the if else clause, they run through every option instead of 
+ stoping when the true statement is found. Switch statements alow for more than one option but also has an added bit of 
+ code for kicing the program out of the string once the correct answer is found. 
+ switch (intelegence)                   switch (MyPowerUp.Name)
+ {                                       {
+     case 5:                              case "Ammo"
+        print ("Good day my lady");         print("+ " + int + "ammo");
+        break;                              break;
+     case 4:                              case "Health"
+        print ("Hello");                    print("+" + int + "Health");
+        break;                              break;
+     case 3:                              case "sheild"
+        print("Hi");                        print("+" + int + "sheild bonus");
+        break;                              break;
+     case 2:                              case "Reload time"
+        print("What's up");                 print("reload time decrease");
+        break;                              break;
+     case 1:                              case "Recovery"
+        print("YOLO");                      print("Recovery time decreased");
+        break;                             break;
+    default:                             
+        print("....");                     
+        break
+ }
  */
 }
