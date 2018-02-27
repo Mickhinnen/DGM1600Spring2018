@@ -56,11 +56,15 @@ of data, String, Int, and Float are a class*/
 		{
 			print(player); a loop printing all the names of players in the array}
 	for loops
-	for (int i = 0; i < numEnemies; i++)
+	for loop is declaration, if statement, do the equation/ do work	
+	for (int i = 0;//declears it a zero
+	 	i < UPPER;//if (i<var)
+		i++)//+1
+	for (int i = 0; i < numEnemies; i++) practise but not recwired to be and i, i is index
 
 Lists
 lists are like arrays, lists use collections.generic
-add in game and in code, in game temp. PlayerNameList.add("Dash")
+add and change in game and in code, in game temp. PlayerNameList.add("Dash")
 PlayerNameList.remove("Hellan") Again temporay file change. For permanent use scritableobject
 ScriptableObject + list = player changing content
 

@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu]
-public class HealthPowerUp : PowerUpBase {
-
-public int HealthLevel
-
+public class HealthPowerUp : PowerUpBase 
+{    
+    public int HealthLevel;
 }
