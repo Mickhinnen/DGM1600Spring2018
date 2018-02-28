@@ -112,5 +112,17 @@ the situation matches and so on. Either way I like If statements. */
         print("....");                     
         break
  }
+ 
+ For loops
+
+ for loops are nearly the same as foreach loops in that they also group data and variables. Most notable that for loops are 
+ better for counting. For loops can begin with a decloration, this is optional but alows us to set a variable for the loop.
+ For example we couild start with 10 or 0 depending on if we wish to increase or decrease the variable. Next is an if 
+ statement that if true will run the loop, followed by a decrement or increase. these are all seperated by ; instead of ,
+ after setting an integer like int numEnemies = 3; you can have a for loops such as for (int i = 0; i < numEnemies; i++)
+ { Debug.Log ("Creating enemy number : " + i); }
+ or int numDirtyDishes = 4 for (int i = 0; i < numDirtyDishes; i--) { Debug.Log ("Cleaning Dishes"); }
+int numApples = 5 for (i = numApples) { Debug,Log("I have 5 apples"); } int numDragonEggs = 0 for( i = 10; i > numDragonEggs;
+i++) { Debug.Log("I found a Dragon Egg"); }
  */
 }
