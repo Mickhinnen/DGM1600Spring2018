@@ -124,5 +124,12 @@ the situation matches and so on. Either way I like If statements. */
  or int numDirtyDishes = 4 for (int i = 0; i < numDirtyDishes; i--) { Debug.Log ("Cleaning Dishes"); }
 int numApples = 5 for (i = numApples) { Debug,Log("I have 5 apples"); } int numDragonEggs = 0 for( i = 10; i > numDragonEggs;
 i++) { Debug.Log("I found a Dragon Egg"); }
+
+Void Function
+void means return nothing, its used in the begining of calling a function.
+Void start, void onmousedown, void update, void OnTriggerEnter, 
+
+
+
  */
 }
