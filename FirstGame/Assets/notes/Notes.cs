@@ -73,5 +73,18 @@ if is good for true and false, yes and no. Switch is better for multiple options
 statement: switch(); however inside is different. switch (string); case "Password": //do work
 case all sorts of stuff as long as same type. can be anykind of data. case strings, enum?, scriptable object.
 
+Functions with Returns
+//Functions with returns are not void, they are a data type
+	void start ()
+	{does work, returns nothing.
+		 MyInt = AddHealth();
+	}
+
+	public int MyInt = 100;// data type
+
+	public int AddHealth()
+	{
+		return 100;
+	}//same as public int MyInt = 100;
 
  */

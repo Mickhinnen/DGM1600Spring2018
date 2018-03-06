@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [CreateAssetMenu]
-public class HealthPowerUp : PowerUpBase 
-{    
-    public int HealthLevel;
+public class Player : ScriptableObject {
+
+public int Health;
+	
 }
