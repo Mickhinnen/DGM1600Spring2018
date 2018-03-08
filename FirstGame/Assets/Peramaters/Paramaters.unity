@@ -390,6 +390,7 @@ GameObject:
   - component: {fileID: 1291189672}
   - component: {fileID: 1291189671}
   - component: {fileID: 1291189670}
+  - component: {fileID: 1291189674}
   m_Layer: 0
   m_Name: HighPowerUp
   m_TagString: Untagged
@@ -461,6 +462,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1291189674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1291189669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbe8f28551c22b44bb9d1a96224173b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyPowerUp: {fileID: 11400000, guid: 5a447c82bf1a803449a9df20443a8f49, type: 2}
+  MyPlayer: {fileID: 11400000, guid: db673d8768528b742847c5ee80712fac, type: 2}
 --- !u!1 &1587982548
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +486,7 @@ GameObject:
   - component: {fileID: 1587982551}
   - component: {fileID: 1587982550}
   - component: {fileID: 1587982549}
+  - component: {fileID: 1587982553}
   m_Layer: 0
   m_Name: MediumPowerUp
   m_TagString: Untagged
@@ -543,6 +558,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1587982553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1587982548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbe8f28551c22b44bb9d1a96224173b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyPowerUp: {fileID: 11400000, guid: 3a00b1ee62136f5409df0466c9bc4223, type: 2}
+  MyPlayer: {fileID: 11400000, guid: db673d8768528b742847c5ee80712fac, type: 2}
 --- !u!1 &1893271390
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +582,7 @@ GameObject:
   - component: {fileID: 1893271393}
   - component: {fileID: 1893271392}
   - component: {fileID: 1893271391}
+  - component: {fileID: 1893271395}
   m_Layer: 0
   m_Name: LowPowerUp
   m_TagString: Untagged
@@ -625,3 +654,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1893271395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1893271390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbe8f28551c22b44bb9d1a96224173b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyPowerUp: {fileID: 11400000, guid: 378c9359119ee594582d81710faf063f, type: 2}
+  MyPlayer: {fileID: 11400000, guid: db673d8768528b742847c5ee80712fac, type: 2}

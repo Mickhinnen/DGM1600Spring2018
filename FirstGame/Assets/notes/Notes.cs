@@ -87,4 +87,9 @@ Functions with Returns
 		return 100;
 	}//same as public int MyInt = 100;
 
+
+input
+if(Input.GetKeyDown(KeyCode.Space))//KeyCode.anykey such as a d s w
+		{
+			Run();
  */
