@@ -130,6 +130,25 @@ void means return nothing, its used in the begining of calling a function.
 Void start, void onmousedown, void update, void OnTriggerEnter, 
 
 
+scope and access modifier
+scope is basically another term for our box. the braces we use marks a scope with information/data in it such as
+monobehavior{               as for access modifiers these refer to public or private class of a script
+                        these decide how accessable data in the script is. Having public in the script makes relevant                 
+    void start()       scopes accessable to other scripts and changable during game testing. Where as private can only be
+    {                   accessed within the script.
+        print etc
+    }
+    void onmousedown
+    {
+        print
+    }
+    if statement
+    { true}
+        than
+    {run code}
+}
+
+
 
  */
 }
