@@ -148,6 +148,11 @@ monobehavior{               as for access modifiers these refer to public or pri
     {run code}
 }
 
+Functions With Peramaters
+ok so I missed this day but to my understanding the peramater is assigning values to objects than passing on that set value
+to another object through a copy or referance. What I understand is that with our example we copied the vaule to player one's
+health with the power up's, the vaule pending on the powerup type. 
+
 
 
  */
