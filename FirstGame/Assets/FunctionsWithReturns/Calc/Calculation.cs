@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class Calculation : ScriptableObject {
+public abstract class Calculation : ScriptableObject
+{ //abstrac is generic, undefined
 
-	public int Calculate(string a, string b)
-	{
-		int aNum = int.Parse(a);
-		int bNum = int.Parse(b);
-		//parse means to convert
-		return aNum + bNum;
-	}	
+	public float aNum;
+	public float bNum;
+	public abstract float Calculate(string a, string b);
+
+
 }

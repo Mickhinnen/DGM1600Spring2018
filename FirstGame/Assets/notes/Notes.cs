@@ -92,4 +92,11 @@ input
 if(Input.GetKeyDown(KeyCode.Space))//KeyCode.anykey such as a d s w
 		{
 			Run();
+
+
+on screen text type using UnityEngine.UI; above monosvript/scriptable object then in monobehavior
+type public InputField Input1;
+	public InputField Input2;
+	public Text SolutionText;       this is breif and incomplete
+	
  */
