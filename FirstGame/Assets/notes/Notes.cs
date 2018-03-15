@@ -99,4 +99,13 @@ type public InputField Input1;
 	public InputField Input2;
 	public Text SolutionText;       this is breif and incomplete
 	
+
+private vs public
+private : outside script can't access that data.
+public : other scripts can see and access	
+protected : children of the script can see it but no one else, like an inheritance
+
+parse means to convert
+key word override means to override the abstract class, orverride whatever was there.
+abstract is a place holder
  */
