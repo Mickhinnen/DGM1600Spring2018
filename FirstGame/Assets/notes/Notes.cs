@@ -108,4 +108,8 @@ protected : children of the script can see it but no one else, like an inheritan
 parse means to convert
 key word override means to override the abstract class, orverride whatever was there.
 abstract is a place holder
+
+move character
+move sript, add a character controler compononent like you would rigid body
+
  */
