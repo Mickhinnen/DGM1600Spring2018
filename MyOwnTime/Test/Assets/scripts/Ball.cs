@@ -3,18 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball : MonoBehaviour {
-public float speed = 4f;
-	// Use this for initialization
+
+	public MovePattern MovePattern;
+	private CharacterController controller;
+
 	void Start () {
-		
+		 controller = GetComponent<CharacterController>();
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
-		var x = Imput.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
-    var z = Imput.GetAzis("Vertical") * Time.deltaTime * 3.0f
-    
-    transform.Rotate(0, x, 0);
-    transform.Translate(0, 0, z);
+		MovePattern.Move(controller, transform);
+	}
+	void OnTriggerEnter(Collider other)
+	{
+		print ("Hit " + other);
+		AddOther(12);
+	}
+	void AddOther(float newOther)
+	{
+		Other += newOther;
 	}
 }
