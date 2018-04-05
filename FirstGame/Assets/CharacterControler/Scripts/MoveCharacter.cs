@@ -6,6 +6,7 @@ public class MoveCharacter : MonoBehaviour {
 
     public MovePattern MovePattern;
 	private CharacterController controller;
+	public int Health = 20;
 	
 	private void Start ()
 	{
@@ -14,4 +15,7 @@ public class MoveCharacter : MonoBehaviour {
     void Update() {
        MovePattern.Move (controller, transform);       
     }
-}
+	
+
+}	
+
