@@ -8,12 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b366897413870a4f81ff8f8caace074, type: 3}
-  m_Name: FastMove
+  m_Script: {fileID: 11500000, guid: 0cecdec232c9b4048bb11d95f1655e39, type: 3}
+  m_Name: SpeedBoost
   m_EditorClassIdentifier: 
-  speed: 12
-  jumpSpeed: 16
-  gravity: 20
-  InputX: {fileID: 0}
-  InputY: {fileID: 0}
-  InputZ: {fileID: 0}
+  PowerLevel: 0
+  MovePatternTransfer: {fileID: 11400000, guid: b3456eacfbae35b43a96fcf3486d1a9e,
+    type: 2}
