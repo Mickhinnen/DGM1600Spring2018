@@ -301,7 +301,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 228908657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 183.28, y: 154.22, z: 2.2733}
+  m_LocalPosition: {x: 420.8, y: 154.22, z: 2.2733}
   m_LocalScale: {x: 5.3309307, y: 5.3309336, z: 5.3309336}
   m_Children: []
   m_Father: {fileID: 0}
@@ -719,7 +719,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1177169280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 253.42, y: 155.16, z: -2.0393}
+  m_LocalPosition: {x: 262.8, y: 155.16, z: -2.0393}
   m_LocalScale: {x: 5.2912545, y: 5.2912536, z: 5.2912536}
   m_Children: []
   m_Father: {fileID: 0}
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebe4064b105bda43a58cde67dec4ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovePattern: {fileID: 11400000, guid: 777aad70cbcf684409d038fd970164d6, type: 2}
+  MovePattern: {fileID: 11400000, guid: 77f40cf904e294440affa7816e8d2794, type: 2}
   Health: 20
 --- !u!23 &1484905620
 MeshRenderer:
