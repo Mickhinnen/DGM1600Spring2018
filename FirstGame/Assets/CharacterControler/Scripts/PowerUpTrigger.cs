@@ -5,21 +5,29 @@ using UnityEngine;
 public class PowerUpTrigger : MonoBehaviour {
 
 	public PowerUp PowerUpTransfer;
-	//public MovePattern PowerUp;
-
+	private MovePattern prevMovePattern;
 	//public GameObject pickupEffect;
 	
 
    private void OnTriggerEnter(Collider obj)
 	{	
-		obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();
+		prevMovePattern = obj.GetComponent<MoveCharacter>().MovePattern
 
+		obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();
+		
+
+		
+		gameObject.SetActive(false);
 		/*if (other.CompareTag("Player"))
 		{
 			StartCoroutine(Pickup(other));
 		}*/
 	}		
 	
+	void RestoreMovePattern(MovePattern oldMovePattern)
+	{
+		
+	}
 /*	IEnumerator Pickup(Collider Player)
 		{
 			print("You hit ");

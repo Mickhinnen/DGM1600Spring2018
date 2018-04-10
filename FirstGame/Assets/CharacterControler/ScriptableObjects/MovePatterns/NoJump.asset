@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f028eecff24b80e4a8113536e37b3de4, type: 3}
-  m_Name: Unknown Jump
+  m_Name: NoJump
   m_EditorClassIdentifier: 
   InputName: Jump
-  FloatValue: 1
+  FloatValue: 0
