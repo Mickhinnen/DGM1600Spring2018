@@ -12,8 +12,10 @@ public class MovePattern : ScriptableObject {
 
 	public void Move(CharacterController controller, Transform transform)
 	{
-		if (controller.isGrounded){
 		moveDirection.x = Input.GetAxis("Horizontal");
+		
+		if (controller.isGrounded){
+		
 		moveDirection.y = 0;
 		moveDirection.z = Input.GetAxis("Vertical");
 		moveDirection = transform.TransformDirection(moveDirection);

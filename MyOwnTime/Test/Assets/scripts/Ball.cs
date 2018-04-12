@@ -15,13 +15,5 @@ public class Ball : MonoBehaviour {
 	void Update () {
 		MovePattern.Move(controller, transform);
 	}
-	void OnTriggerEnter(Collider other)
-	{
-		print ("Hit " + other);
-		AddOther(12);
-	}
-	void AddOther(float newOther)
-	{
-		Other += newOther;
-	}
+	
 }

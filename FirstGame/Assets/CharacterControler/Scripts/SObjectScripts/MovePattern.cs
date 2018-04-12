@@ -23,10 +23,10 @@ public void Move (CharacterController controller, Transform Mytransform)
         moveDirection = Mytransform.TransformDirection(moveDirection);
         moveDirection *= speed;
 			
-            if (Input.GetButton("Jump"))//bool.. boolean variable
-                moveDirection.y = jumpSpeed; 
+         //   if (Input.GetButton("Jump"))//bool.. boolean variable
+           //     moveDirection.y = jumpSpeed; 
         }
-      
+    
             
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move (moveDirection * Time.deltaTime);

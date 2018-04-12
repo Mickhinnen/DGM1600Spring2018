@@ -11,7 +11,7 @@ public class PowerUpTrigger : MonoBehaviour {
 
    private void OnTriggerEnter(Collider obj)
 	{	
-		prevMovePattern = obj.GetComponent<MoveCharacter>().MovePattern
+		prevMovePattern = obj.GetComponent<MoveCharacter>().MovePattern;
 
 		obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();
 		
