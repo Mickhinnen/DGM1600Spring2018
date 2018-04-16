@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class MovePattern : ScriptableObject {
 
+    public float PowerLevel = 0F;
 	public float speed = 20.0F;
     public float jumpSpeed = 20.0F;
     public float gravity = 20.0F;

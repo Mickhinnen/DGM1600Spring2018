@@ -6,41 +6,24 @@ using UnityEngine.UI;
 public class PowerUpTrigger : MonoBehaviour {
 
 	public PowerUp PowerUpTransfer;
-	public float PowerLevel = 0.2;
+	public float PowerLevel = 0.2F;
 	public Image HealthBar;
-	//public GameObject pickupEffect;
-	
+
+	public float AddPowerLevel()
+	{
+		return HealthBar.fillAmount += PowerLevel;
+	}		
 
    private void OnTriggerEnter(Collider obj)
 	{	
-		HealthBar.FillAmount += PowerLevel;
-
-		if (HealthBar.FillAmount = 0);
-		{
-			obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();
-		
+		PowerLevel = AddPowerLevel;
+		obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();
+		//if (HealthBar.fillAmount == 0F);
+		//	{
+		//	obj.GetComponent<MoveCharacter>().MovePattern.StopMove = PowerUpTransfer.Transfer();
+		//	}
 			gameObject.SetActive(false);
-		}
-		/*if (other.CompareTag("Player"))
-		{
-			StartCoroutine(Pickup(other));
-		}*/
-	}		
-	
-	void RestoreMovePattern(MovePattern oldMovePattern)
-	{
 		
-	}
-/*	IEnumerator Pickup(Collider Player)
-		{
-			print("You hit ");
-
-			Instantiate(pickupEffect, transform.position, transform.rotation);
-
-			//effect	
-
-			Destroy(gameObject);
-		}
-*/	
+	}		
 
 }

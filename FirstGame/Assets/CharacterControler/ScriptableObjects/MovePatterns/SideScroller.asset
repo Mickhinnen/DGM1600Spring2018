@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b366897413870a4f81ff8f8caace074, type: 3}
   m_Name: SideScroller
   m_EditorClassIdentifier: 
+  PowerLevel: 0.2
   speed: 20
   jumpSpeed: 22
   gravity: 40
