@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15241ee801fd3c249bacf71cad938ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUpTransfer: {fileID: 0}
+  PowerUpTransfer: {fileID: 11400000, guid: f41c654debe3e634caf3260473b97a38, type: 2}
   PowerLevel: 0.2
   HealthBar: {fileID: 915320156}
 --- !u!114 &915320156
@@ -1473,8 +1473,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PowerUpTransfer: {fileID: 11400000, guid: f41c654debe3e634caf3260473b97a38, type: 2}
-  PowerLevel: -0.2
-  HealthBar: {fileID: 0}
+  PowerLevel: -0.5
+  HealthBar: {fileID: 915320156}
 --- !u!23 &1836811937
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PowerUpTrigger : MonoBehaviour {
 
 	public PowerUp PowerUpTransfer;
-	public float PowerLevel = 0.2F;
+	public float PowerLevel = 1.0F;
 	public Image HealthBar;
 
 	public float AddPowerLevel()
@@ -16,12 +16,11 @@ public class PowerUpTrigger : MonoBehaviour {
 
    private void OnTriggerEnter(Collider obj)
 	{	
-		PowerLevel = AddPowerLevel;
 		obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();
-		//if (HealthBar.fillAmount == 0F);
-		//	{
-		//	obj.GetComponent<MoveCharacter>().MovePattern.StopMove = PowerUpTransfer.Transfer();
-		//	}
+		if (HealthBar.fillAmount > 0F);
+			{
+				PowerLevel = AddPowerLevel();
+			}
 			gameObject.SetActive(false);
 		
 	}		
