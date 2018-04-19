@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveCharacter : MonoBehaviour {
 
-    public MovePattern MovePattern;
+    public Player Player;
 	private CharacterController controller;
 	public int Health = 20;
 	
@@ -13,7 +13,7 @@ public class MoveCharacter : MonoBehaviour {
 	  controller = GetComponent<CharacterController>();	
 	}
     void Update() {
-       MovePattern.Move (controller, transform);       
+       Player.MovePattern.Move (controller, transform);       
     }
 	
 

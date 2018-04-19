@@ -11,9 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b366897413870a4f81ff8f8caace074, type: 3}
   m_Name: MoveFast
   m_EditorClassIdentifier: 
-  PowerLevel: 0.2
   speed: 40
-  jumpSpeed: 20
+  jumpSpeed: 5
   gravity: 20
   InputX: {fileID: 11400000, guid: f3de7f97576f1db42a3200fec398b214, type: 2}
   InputY: {fileID: 11400000, guid: 44b65271eca630e4c89c5a927f1d8dc9, type: 2}
