@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: JumpBool
   m_EditorClassIdentifier: 
   InputName: Jump
-  FloatValue: 1
+  FloatValue: 0.8

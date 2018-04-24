@@ -22,7 +22,19 @@ public class PowerUpTrigger : MonoBehaviour {
 				PowerLevel = AddPowerLevel();
 			}
 			gameObject.SetActive(false);
-		
+		/*Switch (HealthColor)
+		{
+			case PowerLevel >= .8F:
+				HealthBar.material.color = Color.green;
+				break;
+			case PowerLevel >= .4F:
+				HealthBar.material.color = Color.yellow;
+				break;
+			case PowerLevel >= .1F:
+				HealthBar.material.color = Color.red;
+				break;
+			
+		}*/
 	}		
 
 }

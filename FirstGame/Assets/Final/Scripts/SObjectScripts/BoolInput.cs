@@ -7,7 +7,6 @@ public class BoolInput : InputBase {
 
 	public string InputName = "Jump";
 	public float FloatValue = 1;
-	private bool additionalJump = false;
 
 	public override float SetFloat()
 	{
