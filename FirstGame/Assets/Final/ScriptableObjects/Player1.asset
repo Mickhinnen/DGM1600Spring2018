@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Player1
   m_EditorClassIdentifier: 
   Health: 0
-  MovePattern: {fileID: 11400000, guid: 5236c3af116e77d4996d2f9dcbc0b86a, type: 2}
+  MovePattern: {fileID: 11400000, guid: 70ae24cb492ca034cbe8a8ced59d2e52, type: 2}
