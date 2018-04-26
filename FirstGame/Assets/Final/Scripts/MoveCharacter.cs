@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveCharacter : MonoBehaviour {
 
     public Player Player;
+	//public PowerUpTrigger PowerLevel;
 	private CharacterController controller;
 	public int Health = 20;
 	
@@ -13,7 +14,13 @@ public class MoveCharacter : MonoBehaviour {
 	  controller = GetComponent<CharacterController>();	
 	}
     void Update() {
-       Player.MovePattern.Move (controller, transform);       
+       Player.MovePattern.Move (controller, transform);  
+
+	  // if(PowerLevel = 0F);
+	  // {
+		//   gameObject.SetActive(false);
+	   //}
+
     }
 	
 

@@ -93,10 +93,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15241ee801fd3c249bacf71cad938ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particles: {fileID: 0}
   PowerUpTransfer: {fileID: 11400000, guid: a22f3538ce681e34d936380a164e889c, type: 2}
   PowerLevel: -1
   HealthBar: {fileID: 0}
+  CurrentPowerUp: 2
 --- !u!135 &135021637030105958
 SphereCollider:
   m_ObjectHideFlags: 1

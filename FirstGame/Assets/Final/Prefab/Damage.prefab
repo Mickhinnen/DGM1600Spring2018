@@ -52,7 +52,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -68,7 +67,6 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -98,6 +96,7 @@ MonoBehaviour:
   PowerUpTransfer: {fileID: 11400000, guid: f41c654debe3e634caf3260473b97a38, type: 2}
   PowerLevel: -0.5
   HealthBar: {fileID: 0}
+  CurrentPowerUp: 2
 --- !u!135 &135778043855338078
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1247605108263410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 531, y: 158.6, z: -0.6}
+  m_LocalPosition: {x: 531, y: 156.1, z: -0.6}
   m_LocalScale: {x: 5.1510377, y: 5.1510386, z: 5.1510386}
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,6 +114,7 @@ MonoBehaviour:
   PowerUpTransfer: {fileID: 11400000, guid: a22f3538ce681e34d936380a164e889c, type: 2}
   PowerLevel: -1
   HealthBar: {fileID: 0}
+  CurrentPowerUp: 2
 --- !u!114 &114632420795717518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Agent: {fileID: 195997623628315026}
   Player: {fileID: 0}
-  speed: 6
+  speed: 20
 --- !u!136 &136926723803247038
 CapsuleCollider:
   m_ObjectHideFlags: 1

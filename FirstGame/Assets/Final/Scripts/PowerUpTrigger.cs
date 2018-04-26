@@ -9,10 +9,12 @@ public class PowerUpTrigger : MonoBehaviour {
 	public float PowerLevel = 1.0F;
 	public Image HealthBar;
 
-	enum HealthColor 
+	public enum PickUp 
 		{
-			Green, Yellow, Red
-		};
+			Speedboost, JumpBoost, EnemyHit
+		}
+
+		public PickUp CurrentPowerUp;
 
 	public float AddPowerLevel()
 	{
@@ -26,20 +28,23 @@ public class PowerUpTrigger : MonoBehaviour {
 			{
 				PowerLevel = AddPowerLevel();
 			}
+		
+		switch (CurrentPowerUp)
+					{
+						case PickUp.Speedboost :
+							print ("you got speed boost");
+							break;
+						case PickUp.JumpBoost:
+							print ("You can now jump");
+							break;
+						case PickUp.EnemyHit:
+							print("you took damage");
+							break;
+
+					}
+
 			gameObject.SetActive(false);
-		/*Switch (HealthColor)
-		{
-			case PowerLevel >= .8F:
-				HealthBar.material.color = Color.green;
-				break;
-			case PowerLevel >= .4F:
-				HealthBar.material.color = Color.yellow;
-				break;
-			case PowerLevel >= .1F:
-				HealthBar.material.color = Color.red;
-				break;
-			
-		}*/
+		
 	}		
 
 }
