@@ -9,6 +9,11 @@ public class PowerUpTrigger : MonoBehaviour {
 	public float PowerLevel = 1.0F;
 	public Image HealthBar;
 
+	enum HealthColor 
+		{
+			Green, Yellow, Red
+		};
+
 	public float AddPowerLevel()
 	{
 		return HealthBar.fillAmount += PowerLevel;
