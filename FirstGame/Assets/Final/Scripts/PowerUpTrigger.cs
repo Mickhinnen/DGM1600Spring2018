@@ -25,9 +25,13 @@ public class PowerUpTrigger : MonoBehaviour {
 	{	
 		obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
 		if (HealthBar.fillAmount > 0F);
-			{
+			
 				PowerLevel = AddPowerLevel();
-			}
+			
+		//	 else
+
+		//		Player.gameObject.SetActive(false);
+			
 		
 		switch (CurrentPowerUp)
 					{

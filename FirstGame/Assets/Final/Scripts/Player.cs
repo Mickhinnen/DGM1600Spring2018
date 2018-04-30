@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Player : ScriptableObject {
 
+    public string[] ablilities;
+    
+
     public int Health;
 
     public MovePattern MovePattern;
