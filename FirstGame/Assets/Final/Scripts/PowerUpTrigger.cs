@@ -8,32 +8,37 @@ public class PowerUpTrigger : MonoBehaviour {
 	public PowerUp PowerUpTransfer;
 	public float PowerLevel = 1.0F;
 	public Image HealthBar;
+	public Player coins;
 
-	public enum PickUp 
+	while ( Player.coins !=30 && HealthBar.fillAmount !=0F)
+	{
+
+	enum PickUp 
 		{
 			Speedboost, JumpBoost, EnemyHit
 		}
 
 		public PickUp CurrentPowerUp;
 
-	public float AddPowerLevel()
-	{
-		return HealthBar.fillAmount += PowerLevel;
-	}		
 
-   private void OnTriggerEnter(Collider obj)
-	{	
-		obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
-		if (HealthBar.fillAmount > 0F);
-			
-				PowerLevel = AddPowerLevel();
-			
-		//	 else
+		public float AddPowerLevel()
+			{
+				return HealthBar.fillAmount += PowerLevel;
+			}		
 
-		//		Player.gameObject.SetActive(false);
+			private void OnTriggerEnter(Collider obj)
+			{	
+				obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
+				if (HealthBar.fillAmount > 0F);
+				
+					PowerLevel = AddPowerLevel();
+				
+				//	 else
+
+				//		Player.gameObject.SetActive(false);
+				
 			
-		
-		switch (CurrentPowerUp)
+				switch (CurrentPowerUp)
 					{
 						case PickUp.Speedboost :
 							print ("you got speed boost");
@@ -44,11 +49,16 @@ public class PowerUpTrigger : MonoBehaviour {
 						case PickUp.EnemyHit:
 							print("you took damage");
 							break;
-
 					}
 
-			gameObject.SetActive(false);
-		
-	}		
+				gameObject.SetActive(false);
+			
+			}		
+	}
+
+	while (Player.coins = 30)
+	{
+		//movecomponent set false? stop all movement?
+	}
 
 }
