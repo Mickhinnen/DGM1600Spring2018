@@ -21,6 +21,15 @@ public class PowerUpTrigger : MonoBehaviour {
 		public PickUp CurrentPowerUp;
 
 
+   private void OnTriggerEnter(Collider obj)
+	{	
+		obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
+		if (HealthBar.fillAmount > 0F);
+			{
+				PowerLevel = AddPowerLevel();
+			}
+		
+		switch (CurrentPowerUp)
 		public float AddPowerLevel()
 			{
 				return HealthBar.fillAmount += PowerLevel;
