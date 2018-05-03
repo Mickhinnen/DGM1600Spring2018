@@ -7,7 +7,7 @@ public class MoveCharacter : MonoBehaviour {
     public Player Player;
 	//public PowerUpTrigger PowerLevel;
 	private CharacterController controller;
-	public int Health = 20;
+	public int Coins = 0;
 	
 	private void Start ()
 	{

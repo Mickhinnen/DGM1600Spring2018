@@ -98,6 +98,8 @@ MonoBehaviour:
   PowerUpTransfer: {fileID: 11400000, guid: d746a0264fcada449a05ece8b1164328, type: 2}
   PowerLevel: 0.2
   HealthBar: {fileID: 0}
+  MyPlayer: {fileID: 11400000, guid: 650ecea41aa0a6448af3b9e376b494ff, type: 2}
+  CurrentPowerUp: 0
 --- !u!135 &135800766717589842
 SphereCollider:
   m_ObjectHideFlags: 1

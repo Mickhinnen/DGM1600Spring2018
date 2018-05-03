@@ -18,10 +18,10 @@ public class PowerUpReturn : MonoBehaviour {
 	}
 
 
-	private void OnMouseDown()
-	{
-		CurrentPlayer.Health = IncreasePowerLevel(); 
-	}
+//	private void OnMouseDown()
+//	{
+//		CurrentPlayer.Coins = IncreasePowerLevel(); 
+//	}
 
 
 }

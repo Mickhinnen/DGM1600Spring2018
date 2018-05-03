@@ -8,45 +8,50 @@ public class PowerUpTrigger : MonoBehaviour {
 	public PowerUp PowerUpTransfer;
 	public float PowerLevel = 1.0F;
 	public Image HealthBar;
-	public Player coins;
+	public Player MyPlayer;
 
-	while ( Player.coins !=30 && HealthBar.fillAmount !=0F)
-	{
+	[SerializeField]
+	private Color Green;
 
-	enum PickUp 
+	[SerializeField]
+	private Color Red;
+
+	public enum PickUp 
 		{
-			Speedboost, JumpBoost, EnemyHit
+			Speedboost, JumpBoost, EnemyHit, ReverseGravity
 		}
 
-		public PickUp CurrentPowerUp;
+	public PickUp CurrentPowerUp;
 
-
-   private void OnTriggerEnter(Collider obj)
-	{	
-		obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
-		if (HealthBar.fillAmount > 0F);
-			{
-				PowerLevel = AddPowerLevel();
-			}
-		
-		switch (CurrentPowerUp)
 		public float AddPowerLevel()
 			{
 				return HealthBar.fillAmount += PowerLevel;
 			}		
 
-			private void OnTriggerEnter(Collider obj)
+	public void start()
+    {
+         string[] CoinTypes = new string [3];
+
+        CoinTypes[0] = "Regular Coin find all 20";
+        CoinTypes[1] = "Large Coin worth 2 find all 3";
+        CoinTypes[2] = "Mega Coin worth 4, theres only 1";
+
+        foreach(string item in CoinTypes)
+        {
+           print(item);
+        }
+    }
+
+
+		private void OnTriggerEnter(Collider obj)
+		{
+			while (MoveCharacter.Coins != 30 && HealthBar.fillAmount != 0F)
 			{	
 				obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
 				if (HealthBar.fillAmount > 0F);
 				
 					PowerLevel = AddPowerLevel();
-				
-				//	 else
-
-				//		Player.gameObject.SetActive(false);
-				
-			
+					
 				switch (CurrentPowerUp)
 					{
 						case PickUp.Speedboost :
@@ -58,16 +63,25 @@ public class PowerUpTrigger : MonoBehaviour {
 						case PickUp.EnemyHit:
 							print("you took damage");
 							break;
+						case PickUp.ReverseGravity:
+							print("Gravity is gone");
+							break;
 					}
 
+					if (HealthBar.fillAmount >= .4F)
+						{
+							HealthBar.color = Color.green;
+						} else
+							{ HealthBar.color = Color.red; }
+
 				gameObject.SetActive(false);
-			
-			}		
-	}
 
-	while (Player.coins = 30)
-	{
-		//movecomponent set false? stop all movement?
-	}
+				for (int i = 90; i > 0; i --)
+				{
+					print(i + "seconds left");
+				}//i was trying to make a timer...
 
-}
+			} //once while loop works end game when life hits 0 or all coins are found
+		}
+	
+	}
