@@ -8,5 +8,4 @@ public class Player : ScriptableObject {
     public string[] ablilities;
 
     public MovePattern MovePattern;
-
 }

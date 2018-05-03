@@ -9,6 +9,7 @@ public class PowerUpTrigger : MonoBehaviour {
 	public float PowerLevel = 1.0F;
 	public Image HealthBar;
 	public Player MyPlayer;
+	public GameObject Player1;
 
 	[SerializeField]
 	private Color Green;
@@ -30,7 +31,8 @@ public class PowerUpTrigger : MonoBehaviour {
 
 	public void start()
     {
-         string[] CoinTypes = new string [3];
+         		 
+		 string[] CoinTypes = new string [3];
 
         CoinTypes[0] = "Regular Coin find all 20";
         CoinTypes[1] = "Large Coin worth 2 find all 3";
@@ -40,12 +42,18 @@ public class PowerUpTrigger : MonoBehaviour {
         {
            print(item);
         }
+
+		 for (int i = 90; i > 0; i --)
+				{
+					print(i + "seconds left");
+				}//i was trying to make a timer...
+
     }
 
-
+	
 		private void OnTriggerEnter(Collider obj)
 		{
-			while (MoveCharacter.Coins != 30 && HealthBar.fillAmount != 0F)
+			while (/*MoveCharacter.Coins != 30 &&*/ HealthBar.fillAmount != 0F)
 			{	
 				obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
 				if (HealthBar.fillAmount > 0F);
@@ -76,12 +84,14 @@ public class PowerUpTrigger : MonoBehaviour {
 
 				gameObject.SetActive(false);
 
-				for (int i = 90; i > 0; i --)
-				{
-					print(i + "seconds left");
-				}//i was trying to make a timer...
-
+				
 			} //once while loop works end game when life hits 0 or all coins are found
 		}
+
+		void update()
+		{
 	
+			GameObject.FindGameObjectWithTag ("Player").SetActive(false);
+			print("Game Over");	
+		}
 	}
