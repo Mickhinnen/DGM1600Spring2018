@@ -53,8 +53,8 @@ public class PowerUpTrigger : MonoBehaviour {
 	
 		private void OnTriggerEnter(Collider obj)
 		{
-			while (/*MoveCharacter.Coins != 30 &&*/ HealthBar.fillAmount != 0F)
-			{	
+		//	while (/*MoveCharacter.Coins != 30 &&*/ HealthBar.fillAmount != 0F) currently while loop crashes unity
+		//	{	
 				obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
 				if (HealthBar.fillAmount > 0F);
 				
@@ -85,13 +85,13 @@ public class PowerUpTrigger : MonoBehaviour {
 				gameObject.SetActive(false);
 
 				
-			} //once while loop works end game when life hits 0 or all coins are found
+		//	} //once while loop works end game when life hits 0 or all coins are found
 		}
 
 		void update()
 		{
 	
-			GameObject.FindGameObjectWithTag ("Player").SetActive(false);
+		//	GameObject.FindGameObjectWithTag ("Player");
 			print("Game Over");	
 		}
 	}

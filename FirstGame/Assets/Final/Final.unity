@@ -1327,6 +1327,7 @@ MonoBehaviour:
   PowerLevel: 0.2
   HealthBar: {fileID: 915320156}
   MyPlayer: {fileID: 11400000, guid: 650ecea41aa0a6448af3b9e376b494ff, type: 2}
+  Player1: {fileID: 0}
   Green: {r: 0, g: 1, b: 0, a: 0}
   Red: {r: 0.9705882, g: 0, b: 0, a: 0}
   CurrentPowerUp: 0
@@ -1681,7 +1682,7 @@ GameObject:
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!81 &1274116695
 AudioListener:
@@ -1876,7 +1877,7 @@ GameObject:
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!143 &1484905618
 CharacterController:
@@ -1907,7 +1908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 11400000, guid: 650ecea41aa0a6448af3b9e376b494ff, type: 2}
-  Coins: 0
 --- !u!23 &1484905620
 MeshRenderer:
   m_ObjectHideFlags: 0
