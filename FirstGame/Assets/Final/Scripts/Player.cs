@@ -6,6 +6,7 @@ using UnityEngine;
 public class Player : ScriptableObject {
 
     public string[] ablilities;
+    public int Coins = 0;
 
     public MovePattern MovePattern;
 }

@@ -9,7 +9,9 @@ public class PowerUpTrigger : MonoBehaviour {
 	public float PowerLevel = 1.0F;
 	public Image HealthBar;
 	public Player MyPlayer;
-	public GameObject Player1;
+	public int Coins = 0;
+	public int FoundCoins = 1;
+//	public GameObject Player1;
 
 	[SerializeField]
 	private Color Green;
@@ -28,6 +30,11 @@ public class PowerUpTrigger : MonoBehaviour {
 			{
 				return HealthBar.fillAmount += PowerLevel;
 			}		
+		
+		public int AddCoins()
+		{
+			return Coins += FoundCoins;
+		}
 
 	public void start()
     {
@@ -53,12 +60,16 @@ public class PowerUpTrigger : MonoBehaviour {
 	
 		private void OnTriggerEnter(Collider obj)
 		{
-		//	while (/*MoveCharacter.Coins != 30 &&*/ HealthBar.fillAmount != 0F) currently while loop crashes unity
+		//	while (/*Player.Coins != 30 &&*/ HealthBar.fillAmount != 0F) DON"T TOUCH CRASHES UNITY
 		//	{	
 				obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
-				if (HealthBar.fillAmount > 0F);
-				
+				if (HealthBar.fillAmount > 0F)
+					{
 					PowerLevel = AddPowerLevel();
+					} else {
+						//gameObject.Player.SetActive(false);
+						print("Game Over");
+					}
 					
 				switch (CurrentPowerUp)
 					{
@@ -88,10 +99,10 @@ public class PowerUpTrigger : MonoBehaviour {
 		//	} //once while loop works end game when life hits 0 or all coins are found
 		}
 
-		void update()
+	/*	void update()				wont get here till I get while loop working
 		{
-	
+			if (HealthBar.fillAmount <= 0F)
 		//	GameObject.FindGameObjectWithTag ("Player");
 			print("Game Over");	
-		}
+		}*/
 	}
