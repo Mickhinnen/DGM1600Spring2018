@@ -21,7 +21,7 @@ public class PowerUpTrigger : MonoBehaviour {
 
 	public enum PickUp 
 		{
-			Speedboost, JumpBoost, EnemyHit, ReverseGravity
+			Speedboost, JumpBoost, EnemyHit, ReverseGravity, coin
 		}
 
 	public PickUp CurrentPowerUp;
@@ -60,7 +60,7 @@ public class PowerUpTrigger : MonoBehaviour {
 	
 		private void OnTriggerEnter(Collider obj)
 		{
-		//	while (/*Player.Coins != 30 &&*/ HealthBar.fillAmount != 0F) DON"T TOUCH CRASHES UNITY
+		//	while (/*Player.Coins != 40 &&*/ HealthBar.fillAmount != 0F) DON"T TOUCH CRASHES UNITY
 		//	{	
 				obj.GetComponent<MoveCharacter>().Player.MovePattern = PowerUpTransfer.Transfer();
 				if (HealthBar.fillAmount > 0F)
@@ -85,6 +85,9 @@ public class PowerUpTrigger : MonoBehaviour {
 						case PickUp.ReverseGravity:
 							print("Gravity is gone");
 							break;
+						case PickUp.coin:
+						print("Found a coin");
+						break;
 					}
 
 					if (HealthBar.fillAmount >= .4F)
